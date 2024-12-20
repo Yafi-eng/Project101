@@ -1,0 +1,191 @@
+.head
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #FE828C;
+  border-radius: 10px;
+  
+}
+body
+{
+  background-image: url(../Pictures-and-fonts/bg3.jpg);
+}
+@font-face {
+  font-family: Autumn Flowers;
+  src: url(../Pictures-and-fonts/AutumnFlowers-9YVZK.otf);
+}
+
+.functioning
+{
+  background-color: #F2ACB9;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 5px 100px 0px;
+  margin-top: 10px;
+  height: 200px;
+  border-radius: 35px;
+}
+.d1
+{
+  background-color: #F2ACB9;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding: 10px 0px 150px 0px;
+margin-top: 10px;
+height: 200px;
+border-radius: 35px;
+}
+.numbers
+{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.description
+{
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+ 
+}
+.head2, .head3
+{
+  margin-bottom: 100px;
+  
+  margin-top: 0px;
+  font-size: 30px;
+  margin: auto;
+  font-family: Autumn Flowers;
+  color: white;
+  
+  
+}
+.head2{
+  margin-bottom: 5px;
+}
+.nums
+{
+  font-size: 50px;
+  color: orangered;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-left: 35px;
+}
+.topic
+{
+  
+  margin-right: 30px;
+}
+
+.te
+{ font-size: 25px;
+  color: white;
+  font-family: Autumn Flowers;
+}
+.te2
+{ color: white;
+  font-size: 10px;
+  
+}
+
+.hidden
+{
+  opacity: 0;
+  transform: translateY(100px);
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+.show
+{
+  opacity: 1;
+  transform: translateY(0px);
+  filter: blur(0px);
+  transform: translateX(0px);
+}
+
+@media (prefer-ruduced-motion)
+{
+   .hidden {
+     transition: none;
+   }
+}
+
+
+.part:nth-child(2)
+{
+  transition-delay: 200ms;
+}
+.part:nth-child(2)
+{
+  transition-delay: 400ms;
+}
+.part:nth-child(2)
+{
+  transition-delay: 800ms;
+}
+.part:nth-child(2)
+{
+  transition-delay: 1600ms;
+}
+.part:nth-child(2)
+{
+  transition-delay: 3200ms;
+}
+.part:nth-child(2)
+{
+  transition-delay: 6400ms;
+}
+.part:nth-child(2)
+{
+  transition-delay: 12000ms;
+}
+
+
+.head2, .head3
+{
+  animation: animate 5s infinite;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    color:  #FE828C;
+  }
+  10%
+  {
+    color:  #FE828C;
+  }
+  30%
+  {
+    color: white;
+  }
+  50%
+  {
+    color:  #FE828C;
+  }
+  60%
+  {
+    color:  #FE828C;
+  }
+  80%
+  {
+    color: white;
+  }
+  100%
+  {
+    color:  #FE828C;
+  }
+  
+}
+
+.h
+{
+  padding: 10px;
+  background-color: #F2ACB9; 
+  margin-top: 30px;
+  border-radius: 10px;
+}

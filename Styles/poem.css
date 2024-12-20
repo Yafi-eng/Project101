@@ -1,0 +1,79 @@
+body
+{
+  background-image: url(../Pictures-and-fonts/pbg.jpg);
+  background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+
+}
+
+@font-face {
+  font-family: GERALDINE;
+  src: url(../Pictures-and-fonts/GERALDINE.ttf);
+}
+@font-face {
+  font-family: Autumn Flowers;
+  src: url(../Pictures-and-fonts/AutumnFlowers-9YVZK.otf);
+}
+.pic
+{
+  width: 115px;
+  clip-path: circle();
+  margin-left: 5px;
+}
+.name-pic
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.poem-name
+{
+  color: white;
+  font-size: 30px;
+  line-height: 23px;
+  font-family: Autumn Flowers;
+  
+  
+}
+.author
+{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+margin: 0px;
+}
+
+.names
+{
+  color: white;
+font-size: 20px;
+
+ font-family: GERALDINE;
+}
+.poem{
+  background-color: #F2949C;
+  margin: 0px 5px 0px 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.stanza,.last
+{
+  font-size: 12px;
+  color: white;
+}
+.s2
+{
+  display: flex;
+  justify-content: flex-end;
+}
+.part
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

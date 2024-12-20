@@ -1,0 +1,528 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+    font-size: 15px;
+    margin: 0;
+    
+    
+}
+.bg
+{
+  
+  padding-top: 115px;
+  padding-bottom: 70px;
+  position: relative;
+  object-position: center;
+  margin-bottom: 25px;
+  
+}
+.imga
+{
+  width: 100px;
+  clip-path: circle();
+  
+}
+.para
+  {
+    font-size: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Autumn Flowers;
+    color: white;
+  }
+.info
+{
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  font-family: Autumn Flowers;
+}
+.image-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+@font-face {
+  font-family: Autumn Flowers;
+  src: url(../Pictures-and-fonts/AutumnFlowers-9YVZK.otf);
+}
+.details
+{
+  font-size: 10px;
+  margin-left: 10px;
+  color: white;
+  
+ 
+}
+.para2
+{
+  
+  padding-top: 20px;
+  padding-bottom: 70px;
+  
+  
+  
+ 
+}
+
+.con
+{
+  border-style: solid;
+  border-color: white;
+  margin: 0px 10px 20px 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.first-two
+{
+  background-image: url(../Pictures-and-fonts/moon101.jpg);
+  background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1734261679 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1734261679 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1734261679 .shape-fill {
+  fill: #9E7BB5;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1734261679 svg {
+    width: calc(147% + 1.3px);
+    height: 72px;
+  }
+}
+
+.custom-shape-divider-bottom-1734283984 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0px;
+}
+
+.custom-shape-divider-bottom-1734283984 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1734283984 .shape-fill {
+    fill: #BE93D4;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+
+    .custom-shape-divider-bottom-1734283984 svg {
+        width: calc(147% + 1.3px);
+        height: 72px;
+        
+    }
+}
+
+.custom-shape-divider-bottom-1734514034 {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.custom-shape-divider-bottom-1734514034 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 72px;
+}
+
+.custom-shape-divider-bottom-1734514034 .shape-fill {
+    fill: #EB618F;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1734514034 svg {
+        width: calc(147% + 1.3px);
+        height: 72px;
+    }
+}
+
+.menu
+
+{
+
+  position: relative;
+  width: 250px;
+  height: 250px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: white;
+  margin: 0px 10px 0px 10px;
+ border-radius: 5px;
+  padding-top: 2px;
+ 
+  
+}
+.menu li{
+  position: absolute;
+  list-style: none;
+  transform-origin: 125px;
+  left: 0;
+  transition: 0.5s;
+  transition-duration: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(100px);
+  text-decoration: none;
+ 
+}
+
+.menu.active li{
+  transform: rotate(calc(360deg / 7 * var(--i)));
+
+}
+.menu li a
+{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(calc(360deg / -7 * var(--i)));
+  transition: 0.5s;
+  color: black;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+
+}
+
+.toggle
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+ 
+  transition: transform 1.25s;
+}
+.menu.active .toggle
+{
+  transform: rotate(360deg);
+}
+
+.b1
+{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  border: none;
+  font-family: Autumn Flowers;
+}
+
+.b-all
+{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  font-family: Autumn Flowers;
+  
+  
+}
+.box-background
+{
+  
+  background-color: #C8A2CB;
+    position: relative;
+  
+  
+}
+.p1
+{
+  font-size: 11px;
+  margin-top: 0px;
+  margin-left: 5px;
+  color: white;
+  
+}
+.box-side
+{
+  border-style: solid;
+  border-color: white;
+  margin: 0px 10px 0px 10px;
+  padding-top: 20px;
+  padding-bottom: 170px;
+  height: 150px;
+  position: relative;
+  
+}
+
+.lastone
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+   height: 150px;
+  background-color: #EB618F;
+  width: 100%;
+  position: relative;
+  
+ 
+  
+}
+.bb
+{
+  border-style: solid;
+border-color: white;
+margin: 0px 10px 20px 10px;
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+.b3
+{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: #E7948C;
+  transition: all 0.3s;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+  color: white;
+  font-family: Autumn Flowers;
+  margin-top: 0px;
+}
+.b3:hover
+{ opacity: 0.5;
+  transform: translateY(-10px);
+  
+}
+
+
+.message
+{
+  font-size: 10px;
+  
+}
+.plain
+{
+  margin-left: 5px;
+  border: white;
+  color: white;
+  background-color: #ea5979;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  padding-top: 0px;
+  
+}
+
+.radio-func
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-part-input
+{ position: relative;
+  height: 7rem;
+  width: 7rem;
+  margin: 0.5rem;
+}
+.radio-part-input input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  
+  
+}
+.radio-part-input .radio-name
+{
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  border: 2px solid lightblue;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 250ms ease;
+}
+
+.radio-part-input i {
+  color: lightblue;
+  font-size: 3rem;
+  
+}
+
+.radio-part-input label {
+  color: lightblue;
+  font-size: 0.80rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+input:checked + .radio-name
+{
+  background-color: lightblue;
+  box-shadow: 0px 0px 10px lightblue;
+  
+}
+
+input:hover + .radio-name
+{
+  box-shadow: 0px 0px 10px lightblue;
+}
+
+input:checked + .radio-name i, 
+input:checked + .radio-name label
+{
+  color: white;
+}
+
+.pa
+{
+   text-align: center;
+}
+
+.feeling
+{
+  color: white;
+  padding-top: 20px;
+  font-family: Autumn Flowers;
+  font-size: 45px;
+}
+.bg2
+{
+  background-color: lightslategrey;
+}
+.select1
+{
+  display: none;
+  padding: 10px;
+  border: solid white;
+  margin: 8px;
+  
+  
+}
+.sad-container a
+{
+  text-decoration: none;
+}
+
+
+.pp1
+{
+  color: white;
+  font-size: 10px;
+  margin-bottom: 10px;
+  
+}
+.links, .links2
+{
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 15px;
+  position: relative;
+}
+
+.happy-container a{
+  text-decoration: none;
+}
+.links:hover , .links2:hover
+ { letter-spacing: 0.25em;
+   background-color: #73c2fb;
+   box-shadow: 0px 0px 35px #73c2fb;
+   color:  #73c2fb;
+ }
+ 
+ .links:before , .links2:before
+ {
+   content: '';
+   position: absolute;
+   inset: 2px;
+   background-color: lightslategrey;
+ }
+ .li:hover{
+   background-color: #03AC13;
+   box-shadow: 0px 0px 35px #03AC13;
+   color:  #03AC13;
+ }
+ .links span, .links2 span{
+   position: relative;
+ }
